@@ -1,0 +1,7 @@
+/.config/mise/conf.d/rocq-nix.toml
+/.dir-locals.el
+/.envrc
+/.rocq-nix
+/.vscode/settings.json
+/result*
+/stdpp

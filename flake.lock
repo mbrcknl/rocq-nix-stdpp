@@ -1,0 +1,103 @@
+{
+  "nodes": {
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1764947035,
+        "narHash": "sha256-EYHSjVM4Ox4lvCXUMiKKs2vETUSL5mx+J2FfutM7T9w=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "a672be65651c80d3f592a89b3945466584a22069",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "rocq-nix": {
+      "inputs": {
+        "nixpkgs": "nixpkgs",
+        "rocq-nix-config": "rocq-nix-config",
+        "treefmt-nix": "treefmt-nix"
+      },
+      "locked": {
+        "lastModified": 1764994389,
+        "narHash": "sha256-WlR0s3JNrpGDgTyT7kwXb1r/0X2ZssbZuQXGSa13luU=",
+        "owner": "mbrcknl",
+        "repo": "rocq-nix",
+        "rev": "3979974f1a798a9152a084202a429b04f3beba40",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mbrcknl",
+        "repo": "rocq-nix",
+        "type": "github"
+      }
+    },
+    "rocq-nix-config": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1764384244,
+        "narHash": "sha256-L/G3Zjj1rimQlFy+faqRJtRL/98M70IuQVpDsP6UM8g=",
+        "owner": "mbrcknl",
+        "repo": "rocq-nix-config",
+        "rev": "6d202a2072685ec0cfa736346f370a6fb2e59ef2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mbrcknl",
+        "repo": "rocq-nix-config",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "rocq-nix": "rocq-nix",
+        "stdpp": "stdpp"
+      }
+    },
+    "stdpp": {
+      "flake": false,
+      "locked": {
+        "host": "gitlab.mpi-sws.org",
+        "lastModified": 1764835899,
+        "narHash": "sha256-t6JUcEqz8Dzv6xOVn6B1Vkf4ekuoKU3zaVPdQLcL/gA=",
+        "owner": "iris",
+        "repo": "stdpp",
+        "rev": "541363899afd14eda5b421b7586260f2a8931d5e",
+        "type": "gitlab"
+      },
+      "original": {
+        "host": "gitlab.mpi-sws.org",
+        "owner": "iris",
+        "repo": "stdpp",
+        "type": "gitlab"
+      }
+    },
+    "treefmt-nix": {
+      "inputs": {
+        "nixpkgs": [
+          "rocq-nix",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1762938485,
+        "narHash": "sha256-AlEObg0syDl+Spi4LsZIBrjw+snSVU4T8MOeuZJUJjM=",
+        "owner": "numtide",
+        "repo": "treefmt-nix",
+        "rev": "5b4ee75aeefd1e2d5a1cc43cf6ba65eba75e83e4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "treefmt-nix",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
